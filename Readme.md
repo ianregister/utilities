@@ -24,3 +24,19 @@ prefix.sh
 
 Used in Alfred.app to create MySQL appropriate, random string database prefix for WordPress
 
+
+To Do
+-----
+
+Ensure wordpress.sh writes hostname to GruntFile.js
+
+Install WordPress plugins
+* Advanced Custom Fields
+* Force Regenerate Thumbnails
+* Memcached Redux
+* Opcode Dashboard
+* Simple Custom Post Order
+* WP Migrate Pro
+* WP Super Cache
+
+
