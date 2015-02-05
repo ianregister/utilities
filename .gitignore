@@ -1,0 +1,6 @@
+.DS_Store
+htaccess-wp
+server.sh
+site.command
+site.sh
+wp-config-custom.php
