@@ -63,12 +63,7 @@ else
 	curl -O https://wordpress.org/latest.tar.gz
 	tar --strip-components=1 -xvf latest.tar.gz
 	rm latest.tar.gz
-	
-	# Copy custom Wordpress wp-config.php
-	# Deprecated, now that we're downloading from git
-	# cp /Users/me/Documents/Scripts/Shell/wp-config-custom.php /Server/$host/wp-config-temp.php
-	
-	
+		
 	# Move current directory to Wordpress themes directory 
 	if [ "$move" == "y" ]; then
 		cp -r /Server/temp/$host/ /Server/$host/wp-content/themes/$host/
