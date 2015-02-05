@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Capture the site host directory name, also is hostname
+# Capture the site host directory name, which is also used in hosts file as hostname
 read -r -p "Enter host directory: " host
 read -r -p "Enter theme directory: " theme
 
