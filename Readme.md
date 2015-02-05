@@ -9,6 +9,7 @@ wordpress.sh
 * Adds entry to hosts file
 * Downloads latest WordPress
 * Installs [WordPress Starter Theme](https://github.com/ianregister/boilerplate)
+* Adds NGINX configuration file
 * Restarts server and then does your homework
 
 

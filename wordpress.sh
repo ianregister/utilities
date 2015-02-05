@@ -40,7 +40,6 @@ else
 			fi	
 	fi
 
-
 	# Capture remaining details
 	read -r -p "Enter db name: " db
 	# Capture site name, change bash's IFS to something other than whitespace so, then unset when complete
@@ -73,12 +72,12 @@ else
 	mkdir -p wp-content/themes/$theme/
 	cd /Server/$host/wp-content/themes/$theme/
 
-	# Get lastest Boilerplate
+	# Get lastest starter theme
 	curl -Lk https://api.github.com/repos/ianregister/boilerplate/tarball -o master.tar.gz
 	tar --strip-components=1 -xvf master.tar.gz
 	rm master.tar.gz
 	
-	
+	# Move back into site root
 	cd /Server/$host/
 	
 	# Move wp-config & move back to site
@@ -86,7 +85,7 @@ else
 
 	# Make a database (if it exists, will not be overwritten)
 	# Including password, but it will give warning
-	# Alteratively use sudo to run script, and add script to sudoers to run without password
+	# Alteratively use sudo to run script (eek), and add script to sudoers to run without password
 	mysql -udb -pdb -e "create database "$db";"
 	
 	# Add our details to the wp-config.php file
